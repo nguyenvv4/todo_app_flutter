@@ -61,7 +61,7 @@ class _AddTodoListState extends State<AddTodoList> {
         "description": description.toString(),
         "completed": false
       };
-      final url = "http://localhost:3000/todos";
+      final url = "http://10.0.2.2:3000/todos";
       final uri = Uri.parse(url);
       final response = await http.post(uri,
           body: jsonEncode(body),
